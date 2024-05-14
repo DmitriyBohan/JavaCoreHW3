@@ -1,23 +1,28 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
+
+
         try {
             Freelancer freelancer1 = Freelancer.create("Dima", 1202);
-            System.out.println(freelancer1);
+            freelancer1.addArray();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         try {
             Worker worker1 = Worker.create("Olga", 58000);
-            System.out.println(worker1);
+            worker1.addArray();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         try {
             Worker worker2 = Worker.create("Sveta", 75000);
-            System.out.println(worker2);
+            worker2.addArray();
         } catch (Exception e) {
             e.printStackTrace();
         }

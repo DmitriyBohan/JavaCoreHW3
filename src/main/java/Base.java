@@ -1,10 +1,12 @@
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
 
 public abstract class Base {
-    private String name;
-    private int yearBirth;
-    private int salary;
+    protected String name;
+    protected int yearBirth;
+    protected int salary;
+    private ArrayList<Base> list = new ArrayList<>();
 
 
     public Base(String name, int salary) {
@@ -40,4 +42,15 @@ public abstract class Base {
     }
 
     public abstract int avgMonthlySalary();
+
+    public void addArray() {
+        try {
+            list.add(this);
+            System.out.println(this.toString() + " add to Arraylist");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
