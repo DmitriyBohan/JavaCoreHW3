@@ -1,8 +1,8 @@
-public class Freelancer extends Base{
+public class Freelancer extends Base {
 
 
-    public Freelancer(String name,int salary,int yearEmployment) {
-        super(name,salary,yearEmployment);
+    public Freelancer(String name, int salary, int yearEmployment) {
+        super(name, salary, yearEmployment);
     }
 
     static Freelancer create(String name, int salary, int yearEmployment) {
@@ -13,12 +13,12 @@ public class Freelancer extends Base{
             throw new RuntimeException("слишком большая зарплата");
         }
 
-        return new Freelancer(name, salary,yearEmployment);
+        return new Freelancer(name, salary, yearEmployment);
     }
 
     @Override
     public int avgMonthlySalary() {
-        return (int)(20.8*8*getSalary());
+        return (int) (20.8 * 8 * getSalary());
     }
 
     @Override
@@ -29,11 +29,6 @@ public class Freelancer extends Base{
                 ", AvgSalary=" + this.avgMonthlySalary() +
                 '}';
     }
-
-
-
-
-
 
 
 }

@@ -28,9 +28,23 @@ public class Main {
             e.printStackTrace();
         }
 
-        //Collections.sort(Base.getList());
+        Collections.sort(Base.getList());
         Collections.sort(Base.list,Base.experienceComparator);
         Base.printArray();
+        System.out.println("-----------------");
+
+
+        //Создать класс, содержащий массив или коллекцию сотрудников (как Worker так и Freelancer),
+        // и реализовать возможность вывода данных с использованием foreach (подсказка: вам потребуется поработать с интерфейсом Iterable).
+        for (Base base : Base.getBaseList()){
+            System.out.println(base);
+        }
+
+
+
+
+
+
 
 
 
