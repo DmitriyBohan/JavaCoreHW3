@@ -1,11 +1,11 @@
 public class Freelancer extends Base{
 
 
-    public Freelancer(String name,int salary) {
-        super(name,salary);
+    public Freelancer(String name,int salary,int yearEmployment) {
+        super(name,salary,yearEmployment);
     }
 
-    static Freelancer create(String name, int salary) {
+    static Freelancer create(String name, int salary, int yearEmployment) {
         if (salary < 0) {
             throw new RuntimeException("отрицательная зарплата");
         }
@@ -13,7 +13,7 @@ public class Freelancer extends Base{
             throw new RuntimeException("слишком большая зарплата");
         }
 
-        return new Freelancer(name, salary);
+        return new Freelancer(name, salary,yearEmployment);
     }
 
     @Override
