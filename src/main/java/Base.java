@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Random;
 
-public abstract class Base {
+abstract class Base implements Comparable<Base>{
     protected String name;
     protected int yearBirth;
     protected int salary;
@@ -14,6 +15,7 @@ public abstract class Base {
         yearBirth = Calendar.getInstance().get(Calendar.YEAR) - (18 + rnd.nextInt(56 - 18));
         this.name = name;
         this.salary = salary;
+        list.add(this);
     }
 
 
@@ -43,14 +45,13 @@ public abstract class Base {
 
     public abstract int avgMonthlySalary();
 
-    public void addArray() {
-        try {
-            list.add(this);
-            System.out.println(this.toString() + " add to Arraylist");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
+
+
+
+
+
+
+
 
 }

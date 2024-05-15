@@ -12,6 +12,7 @@ public class Freelancer extends Base{
         if (salary > 1202) {
             throw new RuntimeException("слишком большая зарплата");
         }
+
         return new Freelancer(name, salary);
     }
 
@@ -28,4 +29,11 @@ public class Freelancer extends Base{
                 ", AvgSalary=" + this.avgMonthlySalary() +
                 '}';
     }
+
+    @Override
+    public int compareTo(Base o) {
+        return 0;
+    }
+
+
 }

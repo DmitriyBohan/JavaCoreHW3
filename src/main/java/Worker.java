@@ -27,4 +27,9 @@ public class Worker extends Base{
                 ", salary=" + this.avgMonthlySalary() +
                 '}';
     }
+
+    @Override
+    public int compareTo(Base o) {
+        return 0;
+    }
 }
