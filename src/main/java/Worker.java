@@ -28,8 +28,5 @@ public class Worker extends Base{
                 '}';
     }
 
-    @Override
-    public int compareTo(Base o) {
-        return 0;
-    }
+
 }
